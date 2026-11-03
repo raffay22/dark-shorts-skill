@@ -1,0 +1,52 @@
+{
+  "channel": "urdu",
+  "styles": {
+    "sumi-light": {
+      "paper": "#F3EFE6",
+      "default": true,
+      "note": "Warm washi / parchment storytelling; GSAP required"
+    }
+  },
+  "motion": {
+    "engine": "gsap",
+    "advanced_motion_graphics": true,
+    "applies_to_styles": ["sumi-light"],
+    "remotion_pattern": "paused_timeline_seek_frame_over_fps"
+  },
+  "rtl": {
+    "captions": true,
+    "titles": true,
+    "font_stack": [
+      "Noto Nastaliq Urdu",
+      "Jameel Noori Nastaleeq",
+      "Segoe UI",
+      "Tahoma",
+      "sans-serif"
+    ]
+  },
+  "categories": {
+    "light_parchment": {
+      "Washi Cinnabar": {"bg": "#F3EFE6", "accent": "#D3381C", "text": "ink_on_washi"},
+      "Washi Indigo": {"bg": "#F3EFE6", "accent": "#1D3B58", "text": "ink_on_washi"},
+      "Washi Peony": {"bg": "#F3EFE6", "accent": "#C94A6A", "text": "ink_on_washi"},
+      "Washi Jade": {"bg": "#F3EFE6", "accent": "#2E6F5E", "text": "ink_on_washi"},
+      "Washi Gold": {"bg": "#F3EFE6", "accent": "#C89B3C", "text": "ink_on_washi"},
+      "Soft Parchment Mist": {"bg": "#F0EBE0", "accent": "#6B7260", "text": "ink_on_washi"}
+    }
+  },
+  "preferred_art_modes": [
+    "japanese_sketch",
+    "wet_wash_light",
+    "human_ink_fill",
+    "line_architecture"
+  ],
+  "avoid_as_default": [
+    "splash_sumi_dark",
+    "Freezing Void",
+    "Gold Empire dark void"
+  ],
+  "music_library": "music-laybary",
+  "svg_min_layers": 4,
+  "voice_id": "o0kuOa7rSjdarn7nIRbL",
+  "output_prefix": "urdu-topic"
+}

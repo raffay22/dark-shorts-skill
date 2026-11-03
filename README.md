@@ -1,56 +1,76 @@
 # dark-shorts-skill
 
-Personal Cursor / Agent skill for **English dark-psychology shorts** (Sumi Remotion + GSAP, Faceless, or **faceless combo** / `sumi-dark-faceless`).
+Portable Cursor / Agent skills for **Shadow Protocol** dark-psychology shorts:
 
-**Not for Urdu** — use `dark_urdu_skill` separately.
+| Skill | Call names | Language |
+|-------|------------|----------|
+| **English** (this folder’s `SKILL.md`) | `dark_shorts_skill` · `dark_sumi_skill` · `faceless combo` / `fd combo` | English |
+| **Urdu** (`dark-urdu-skill/`) | `dark_urdu_skill` | Urdu / Urdish |
+
+Do **not** mix English and Urdu pipelines in one short.
 
 ## Install (Cursor)
 
-1. Clone this repo somewhere durable, e.g.:
+1. Clone:
 
 ```bash
 git clone https://github.com/raffay22/dark-shorts-skill.git
+cd dark-shorts-skill
 ```
 
-2. Copy or symlink into Cursor personal skills:
-
-```text
-~/.cursor/skills/dark-shorts-skill/
-```
-
-On Windows:
+2. Install **both** skill folders (Cursor only loads a skill if `SKILL.md` is at that skill’s root):
 
 ```powershell
-Copy-Item -Recurse .\dark-shorts-skill "$env:USERPROFILE\.cursor\skills\dark-shorts-skill"
+# English
+Copy-Item -Recurse . "$env:USERPROFILE\.cursor\skills\dark-shorts-skill"
+
+# Urdu (nested folder → its own skill name)
+Copy-Item -Recurse .\dark-urdu-skill "$env:USERPROFILE\.cursor\skills\dark-urdu-skill"
 ```
 
-3. Restart Cursor (or start a new agent chat). Call the skill by name:
+macOS / Linux:
 
-- `dark_shorts_skill` / `dark_sumi_skill`
-- `faceless combo` / `fd combo` → Sumi Dark + faceless
-- `faceless skill` / `2d skill` → faceless-shorts engine
+```bash
+cp -R . ~/.cursor/skills/dark-shorts-skill
+cp -R ./dark-urdu-skill ~/.cursor/skills/dark-urdu-skill
+```
 
-## What’s inside
+3. New agent chat. Call:
 
-| File | Purpose |
-|------|---------|
-| `SKILL.md` | Entry point + routing |
-| `locked-settings.md` | Voice, music loudness, brand, GSAP locks |
-| `visual-themes.md` | Sumi styles / rotation rules |
-| `sumi-dark-faceless.md` | Combo craft |
-| `faceless-route.md` | Faceless routing notes |
-| `themes.json` | Theme catalog |
-| `english_shorts_voice.json` | Canonical English voice config |
+- English: `dark_shorts_skill` / `dark_sumi_skill` / `faceless combo`
+- Urdu: `dark_urdu_skill`
+- Either language + faceless engine: `faceless skill` / `2d skill`
 
-## Requirements in the project you run it on
+## Repo layout
 
-This skill expects a shorts project with assets such as:
+```text
+dark-shorts-skill/           ← English skill root
+  SKILL.md
+  locked-settings.md
+  visual-themes.md
+  sumi-dark-faceless.md
+  faceless-route.md
+  themes.json
+  english_shorts_voice.json
+  dark-urdu-skill/           ← Urdu skill (copy out as its own skills folder)
+    SKILL.md
+    locked-settings.md
+    visual-themes.md
+    faceless-route.md
+    themes.json
+    urdu_shorts_voice.json
+```
 
-- `data/english_topics.json`
-- `music-laybary/`
-- brand plate / `tools/mix_loudness_lock.py`
-- ElevenLabs key in env (`ELEVENLABS_API_KEY`) — **never commit keys**
+## Project requirements
+
+| English | Urdu |
+|---------|------|
+| `data/english_topics.json` | `data/urdu_topics.json` |
+| `output/topic-*` | `output/urdu-topic-*` |
+| Voice lock in `english_shorts_voice.json` | Voice lock in `urdu_shorts_voice.json` |
+
+Shared: `music-laybary/`, Shadow Protocol brand, ElevenLabs via `ELEVENLABS_API_KEY` (never commit keys).
 
 ## License / sharing
 
-Your channel locks (voice IDs, brand, loudness caps) travel with this skill. Treat the repo as private if you don’t want those public.
+Channel locks (voice IDs, brand, loudness caps) are in this public repo. Make the GitHub repo **private** if you don’t want those visible.

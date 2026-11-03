@@ -6,7 +6,7 @@ description: >-
   Faceless: faceless-shorts styles. Combo: sumi-dark-faceless (call **faceless combo**
   or **fd combo** — see sumi-dark-faceless.md). Triggers: dark_shorts_skill,
   dark_sumi_skill, faceless combo, fd combo, faceless skill, english_topics.json.
-  Not for Urdu — use dark_urdu_skill.
+  Not for Urdu — use bundled dark-urdu-skill/ (call dark_urdu_skill).
 disable-model-invocation: true
 ---
 
@@ -14,7 +14,7 @@ disable-model-invocation: true
 
 Personal skill for **English dark-psychology / power-dynamics shorts**. Works in **any** Cursor project when the user calls `dark_shorts_skill` or alias **`dark_sumi_skill`**.
 
-**Do not use this skill for Urdu topics.** Urdu uses `dark_urdu_skill`.
+**Do not use this skill for Urdu topics.** Urdu is bundled at [`dark-urdu-skill/`](dark-urdu-skill/SKILL.md) — install that folder as `~/.cursor/skills/dark-urdu-skill/` and call **`dark_urdu_skill`**.
 
 **Must read before generating:**
 1. [locked-settings.md](locked-settings.md) — voice + **GSAP / motion graphics** + bed + end music locks

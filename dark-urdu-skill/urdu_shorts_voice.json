@@ -1,0 +1,90 @@
+{
+  "language": "ur",
+  "scope": "urdu_topics_only",
+  "source_file": "data/urdu_topics.json",
+  "script_field": "urdish_hook_script",
+  "provider": "elevenlabs",
+  "voice_id": "o0kuOa7rSjdarn7nIRbL",
+  "model_id": "eleven_multilingual_v2",
+  "voice_settings": {
+    "stability": 0.65,
+    "similarity_boost": 0.85
+  },
+  "delivery": {
+    "style": "sumi-light",
+    "art_route": "svg-sketch",
+    "aspect_ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 24,
+    "captions": {
+      "position": "bottom",
+      "direction": "rtl",
+      "dynamic": true,
+      "font_scale": 0.05,
+      "never_center": true,
+      "stop_when_vo_ends": true,
+      "font_stack": [
+        "Noto Nastaliq Urdu",
+        "Jameel Noori Nastaleeq",
+        "Segoe UI",
+        "Tahoma",
+        "sans-serif"
+      ]
+    }
+  },
+  "visual": {
+    "themes_reference": "~/.cursor/skills/dark-urdu-skill/visual-themes.md",
+    "svg_min_layers": 4,
+    "zero_metaphor_reuse": true,
+    "python_generator_required": true,
+    "preferred_art_modes": ["japanese_sketch", "wet_wash_light", "human_ink_fill"]
+  },
+  "motion": {
+    "engine": "gsap",
+    "advanced_motion_graphics": true
+  },
+  "audio_bed": {
+    "route": "music-laybary-first",
+    "library_folder": "music-laybary",
+    "character": "Soft emotional underscore under VO; separate library end track",
+    "duck_under_voice": true,
+    "bed_peak": 0.28,
+    "bed_duck": 0.12,
+    "bed_vs_vo_max": 0.35,
+    "bed_volume": 0.85,
+    "narration_volume": 1.0,
+    "narration_start_seconds": 0.4,
+    "loudness_lock_file": "tools/mix_loudness_lock.py",
+    "end_drop": {
+      "enabled": true,
+      "provider": "music-laybary",
+      "fallback_provider": "elevenlabs-sound-generation",
+      "duration_seconds": 10.0,
+      "mix_volume": 0.55,
+      "vs_vo_ratio": 0.55,
+      "peak_ceiling": 22000,
+      "headphone_safe": true,
+      "sustained_full_segment": true,
+      "keep_dialogue_bed_untouched": true,
+      "keep_narration_untouched": true
+    },
+    "end_title_card": {
+      "enabled": true,
+      "text_from": "urdu_topics.json title",
+      "style": "same as opening title",
+      "direction": "rtl",
+      "voice": false,
+      "starts_with_end_drop": true
+    }
+  },
+  "brand_identity": {
+    "enabled": true,
+    "asset": "brand/shadow-protocol-plate-220.png",
+    "placement": "top-right"
+  },
+  "output_pattern": "output/urdu-topic-{topic_id:02d}-{slug}.mp4",
+  "skill_reference": "~/.cursor/skills/dark-urdu-skill/SKILL.md",
+  "locked": true,
+  "updated_for": "Urdu channel — Sumi Light sketch + RTL + Urdu voice lock"
+}
