@@ -1,0 +1,71 @@
+{
+  "styles": {
+    "sumi-original": {
+      "paper": "#eeeadd",
+      "ink": "#242b29",
+      "accent": "#a34537",
+      "note": "Painted Sumi-e stories; GSAP required"
+    },
+    "sumi-light": {
+      "paper": "#F3EFE6",
+      "note": "Mineral washi; GSAP required"
+    },
+    "sumi-dark": {
+      "void": true,
+      "accent_red": "#7A1622",
+      "note": "Ink splash void; GSAP required"
+    },
+    "sumi-blossom": {
+      "paper": "#E5E1D8",
+      "ink": "#141414",
+      "accent": "#B55441",
+      "aliases": ["Last Blossom", "Cherry Blossom Sumi", "sumi-last-blossom"],
+      "art_mode": "last_blossom_svg",
+      "note": "Mist + cherry blossom crimson; GSAP required"
+    },
+    "sumi-dark-faceless": {
+      "void": "#0B0B0C",
+      "ink": "#111111",
+      "wash": "#5C5C5C",
+      "accent": "#7A1622",
+      "engine": "faceless-shorts",
+      "aesthetic": "sumi-dark",
+      "aliases": ["faceless combo", "fd combo", "dark faceless combo", "sumi dark + faceless", "combo style dark"],
+      "seed": "films/urdu-topic-03-absolute-unpredictability/",
+      "doc": "sumi-dark-faceless.md",
+      "note": "Faceless capture + Sumi Dark ink void; not Remotion GSAP"
+    }
+  },
+  "motion": {
+    "engine": "gsap",
+    "advanced_motion_graphics": true,
+    "applies_to_styles": ["sumi-original", "sumi-light", "sumi-dark", "sumi-blossom"],
+    "remotion_pattern": "paused_timeline_seek_frame_over_fps",
+    "faceless_combo_styles": ["sumi-dark-faceless"]
+  },
+  "categories": {
+    "A_silence_isolation": {
+      "Freezing Void": {"bg": "#08090C", "accent": "#00E5FF", "text": "cyan_glow"},
+      "Toxic Fog": {"bg": "#12151C", "accent": "#00FF9D", "text": "mint_neon"},
+      "Shadow Mirror": {"bg": "#000000", "accent": "#E0E6ED", "text": "white_bold_shadow"},
+      "Fading Signal": {"bg": "#181818", "accent": "#A855F7", "text": "lavender_glow"}
+    },
+    "B_anger_betrayal_power": {
+      "Crimson Rage": {"bg": "#000000", "accent": "#FF0033", "text": "heavy_red"},
+      "Burnt Empire": {"bg": "#141113", "accent": "#FF5500", "text": "ember_stroke"},
+      "Crown Betrayal": {"bg": "#1A0A0F", "accent": "#E60049", "text": "gold_red_outline"},
+      "Venomous Control": {"bg": "#0D0D0D", "accent": "#84CC16", "text": "lime_kinetic"}
+    },
+    "C_wealth_ambition": {
+      "Gold Empire": {"bg": "#0F0F10", "accent": "#FFD700", "text": "gold_shine"},
+      "Emerald Reserve": {"bg": "#05140E", "accent": "#10B981", "text": "emerald"},
+      "Digital Monopoly": {"bg": "#0A0F1D", "accent": "#06B6D4", "text": "tech_cyan"},
+      "High-Roller Vault": {"bg": "#121212", "accent": "#F1F5F9", "text": "platinum_badge"}
+    },
+    "blossom_mist": {
+      "Last Blossom Mist": {"bg": "#E5E1D8", "accent": "#B55441", "text": "ink_on_mist"}
+    }
+  },
+  "music_library": "music-laybary",
+  "svg_min_layers": 4
+}

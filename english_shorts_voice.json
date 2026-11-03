@@ -1,0 +1,58 @@
+{
+  "language": "en",
+  "scope": "english_topics_only",
+  "source_file": "data/english_topics.json",
+  "provider": "elevenlabs",
+  "voice_id": "hgAoejldxKTXsFSP7qeO",
+  "model_id": "eleven_multilingual_v2",
+  "voice_settings": {
+    "stability": 0.65,
+    "similarity_boost": 0.85
+  },
+  "delivery": {
+    "style": "sumi-dark",
+    "art_route": "svg",
+    "aspect_ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 24,
+    "captions": {
+      "position": "bottom",
+      "dynamic": true,
+      "font_scale": 0.052,
+      "never_center": true,
+      "stop_when_vo_ends": true
+    }
+  },
+  "audio_bed": {
+    "route": "python-only-during-dialogue",
+    "character": "Free Fire / mobile-gaming energy under VO",
+    "duck_under_voice": true,
+    "bed_volume": 0.88,
+    "narration_volume": 1.0,
+    "narration_start_seconds": 0.4,
+    "end_drop": {
+      "enabled": true,
+      "provider": "elevenlabs-sound-generation",
+      "model_id": "eleven_text_to_sound_v3",
+      "character": "Ultra high-energy Gen Z / Free Fire viral battle drop",
+      "start_after_voice_seconds": 0.1,
+      "duration_seconds": 10.0,
+      "mix_volume": 0.72,
+      "headphone_safe": true,
+      "sustained_full_segment": true,
+      "prefer_loop_generation": true,
+      "keep_dialogue_bed_untouched": true,
+      "keep_narration_untouched": true
+    },
+    "end_title_card": {
+      "enabled": true,
+      "text_from": "english_topics.json title",
+      "style": "same as opening title",
+      "voice": false,
+      "starts_with_end_drop": true
+    }
+  },
+  "output_pattern": "output/topic-{topic_id:02d}-{slug}.mp4",
+  "locked": true
+}
