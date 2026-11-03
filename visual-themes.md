@@ -9,6 +9,9 @@
 | `sumi-light` | Warm washi + mineral washes | `beyondsumi/.../styles/sumi-light.md` + `sumi-svg/.../sumi-light.md` |
 | `sumi-blossom` | **Last Blossom / Cherry Blossom Sumi** mist paper | This file (Blossom lock) + prior `last_blossom_svg` films |
 | **`sumi-dark-faceless`** | Ink void on **faceless** canvas (combo) | [sumi-dark-faceless.md](sumi-dark-faceless.md) · seed `films/urdu-topic-03-absolute-unpredictability/` |
+| **`tech-style`** | Cyber-Sumi charcoal / gold / cyan knowledge guides | [tech-style.md](tech-style.md) · seed `films/techspec-01-laptop-college-major/` |
+
+**Tech-style lock (Cyber-Sumi):** product/spec buying guides — **one hero image per beat** (never 2×2 grids), typewriter + word-reveal titles, animated RAM/OS/checklist cards, Pexels/Pixabay B-roll with `SOURCES.md`. Full rules: [tech-style.md](tech-style.md).
 
 **Sumi Original lock:** traditional Japanese Sumi-e **painted stories** — expressive economical ink forms, soft translucent tonal washes, paper texture `#eeeadd`, dark ink `#242b29`, muted red `#a34537`, olive/green-grey landscape, mist, layered mountain depth, quiet negative space. Animate painted people/cloth/expression/environment with **GSAP** — **no** Dark splash grammar. Captions: soft paper / translucent ink-tone backing. Do **not** fake Original with Light mineral candy or Dark void splash.
 
