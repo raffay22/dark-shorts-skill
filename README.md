@@ -9,7 +9,7 @@ Personal Cursor / Agent skill for **English dark-psychology shorts** (Sumi Remot
 1. Clone this repo somewhere durable, e.g.:
 
 ```bash
-git clone https://github.com/OWNER/dark-shorts-skill.git
+git clone https://github.com/raffay22/dark-shorts-skill.git
 ```
 
 2. Copy or symlink into Cursor personal skills:
