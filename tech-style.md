@@ -61,11 +61,12 @@ Seed film: project `films/techspec-01-laptop-college-major/`.
 
 ### Text craft locks
 
-1. **Large, few words** — no paragraphs on screen.
-2. Hook screen: typewriter the **spoken hook claim**, then reveal short OST (e.g. `YOUR MAJOR → YOUR SPECS`).
-3. Prefer **2 lines max** for typewriter hooks on 9:16.
-4. Spec numbers (`8GB`, `16GB`, `32GB+`) as hero motion-graphic cards, not tiny captions alone.
-5. Do not stack long OST + long hook + busy photo labels at once — hierarchy: hook/title → hero → one tag.
+1. **Keywords only** — show the beat’s feature as a **complete short label** (`8GB RAM`, `16GB RAM`, `32GB+ RAM`, `CODE`, `CAD`). Never mid-word cutoffs (`8GB RA…`).
+2. Prefer **cyan** keyword text on a dark plate (blue/cyan is the lock). Avoid white + yellow underline titles — they read poorly on charcoal.
+3. Spell-check every on-screen word (`university` not `univercity`).
+4. Sync keyword to the VO idea for that beat; do not start the next keyword before the voice reaches it.
+5. Spec numbers as full tokens: `8GB RAM` / `16GB RAM` / `32GB+ RAM` (not incomplete typewriter).
+6. Do not stack long OST + long hook + busy photo labels — hierarchy: one keyword → hero → optional cyan tag.
 
 ---
 
