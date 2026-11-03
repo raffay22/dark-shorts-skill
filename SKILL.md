@@ -2,19 +2,21 @@
 name: dark-shorts-skill
 description: >-
   Produce locked English dark-psychology shorts (default Sumi Remotion path, or
-  Faceless / combo paths). Sumi: Original / Light / Dark / Blossom + GSAP.
-  Faceless: faceless-shorts styles. Combo: sumi-dark-faceless (call **faceless combo**
-  or **fd combo** — see sumi-dark-faceless.md). Triggers: dark_shorts_skill,
-  dark_sumi_skill, faceless combo, fd combo, faceless skill, english_topics.json.
-  Not for Urdu — use bundled dark-urdu-skill/ (call dark_urdu_skill).
+  Faceless / combo paths) plus Cyber-Sumi **tech-style** knowledge guides.
+  Sumi: Original / Light / Dark / Blossom + GSAP. Faceless: faceless-shorts.
+  Combo: sumi-dark-faceless (**faceless combo** / **fd combo**). Tech guides:
+  **tech style** / **tech-style** / **cyber-sumi** (see tech-style.md — one hero
+  per beat, typewriter titles, B-roll rules). Triggers: dark_shorts_skill,
+  dark_sumi_skill, tech style, faceless combo, fd combo, faceless skill,
+  english_topics.json. Not for Urdu — use bundled dark-urdu-skill/.
 disable-model-invocation: true
 ---
 
 # dark_shorts_skill
 
-Personal skill for **English dark-psychology / power-dynamics shorts**. Works in **any** Cursor project when the user calls `dark_shorts_skill` or alias **`dark_sumi_skill`**.
+Personal skill for **English dark-psychology / power-dynamics shorts** and **Cyber-Sumi tech knowledge guides**. Works in **any** Cursor project when the user calls `dark_shorts_skill` or alias **`dark_sumi_skill`** (or **`tech style`** for product/spec guides).
 
-**Do not use this skill for Urdu topics.** Urdu is bundled at [`dark-urdu-skill/`](dark-urdu-skill/SKILL.md) — install that folder as `~/.cursor/skills/dark-urdu-skill/` and call **`dark_urdu_skill`**.
+**Do not use this skill for Urdu topics.** Urdu is bundled at [`dark-urdu-skill/`](dark-urdu-skill/SKILL.md) — install that folder as `~/.cursor/skills/dark-urdu-skill/` and call **`dark_urdu_skill`**. (Urdu tech guides may still apply [`tech-style.md`](tech-style.md) visuals while keeping Urdu voice locks.)
 
 **Must read before generating:**
 1. [locked-settings.md](locked-settings.md) — voice + **GSAP / motion graphics** + bed + end music locks
@@ -22,6 +24,7 @@ Personal skill for **English dark-psychology / power-dynamics shorts**. Works in
 3. Beyondsumi style guides when needed: `sumi-original.md` · `sumi-light.md` · `sumi-dark.md` (+ matching `sumi-svg/references/styles/…`) · Last Blossom / cherry blossom craft in visual-themes
 4. **If user says faceless / 2D skill:** also read project `faceless-shorts/SKILL.md` (or `~/.cursor/skills/faceless-shorts/SKILL.md`) + the chosen style’s `STYLE.md`
 5. **If user says `faceless combo` / `fd combo` / Sumi Dark + faceless / `sumi-dark-faceless`:** read [sumi-dark-faceless.md](sumi-dark-faceless.md)
+6. **If user says `tech style` / `tech-style` / `cyber-sumi` / TechSpec / laptop-or-product knowledge guide:** read [tech-style.md](tech-style.md)
 
 Do not use Voicebox.
 
@@ -32,6 +35,7 @@ Do not use Voicebox.
 | Default / Sumi / Remotion / `sumi-original` · `sumi-light` · `sumi-dark` · `sumi-blossom` | **Sumi Remotion** + GSAP |
 | **`faceless skill`**, `use faceless`, `2d skill`, Inside Out / Stick Story / Paper Atlas / Deep Dive / Night File | **`faceless-shorts`** (base styles) |
 | **`faceless combo`** · **`fd combo`** · `sumi-dark-faceless` · Sumi Dark + faceless | **Combo** — faceless engine + Sumi Dark aesthetic → [sumi-dark-faceless.md](sumi-dark-faceless.md) |
+| **`tech style`** · **`tech-style`** · **`cyber-sumi`** · TechSpec / specs / buying guide | **Cyber-Sumi tech guide** → [tech-style.md](tech-style.md) (one hero/beat · kinetic text · B-roll) |
 
 When Faceless (base or combo) is selected:
 1. Load **`faceless-shorts`**. For **combo**, also apply Sumi Dark palette/craft from `sumi-dark-faceless.md` (seed: `films/urdu-topic-03-absolute-unpredictability/`).
@@ -75,8 +79,9 @@ When Faceless (base or combo) is selected:
 | `sumi-dark` | Ink void / splash · selective dark crimson | Remotion + GSAP; Beyondsumi Dark craft |
 | `sumi-blossom` | **Last Blossom / Cherry Blossom Sumi** · mist paper `#E5E1D8` · ink `#141414` · blossom crimson `#B55441` | Soft mist + selective cherry blossoms/scarf accents; not plain Light recolour |
 | **`sumi-dark-faceless`** | **Combo** — Sumi Dark ink void on **faceless** capture | Say **`faceless combo`** / **`fd combo`**; see [sumi-dark-faceless.md](sumi-dark-faceless.md) |
+| **`tech-style`** | **Cyber-Sumi** charcoal / gold blueprint / cyan · product + B-roll knowledge guides | Say **`tech style`** / **`cyber-sumi`**; see [tech-style.md](tech-style.md) — **one image per beat**, typewriter titles, motion-graphic specs |
 
-Do **not** fake a style by only swapping hex colours. Follow Beyondsumi craft for Original / Light / Dark Remotion; follow visual-themes Blossom lock for `sumi-blossom`; follow combo doc for `sumi-dark-faceless`.
+Do **not** fake a style by only swapping hex colours. Follow Beyondsumi craft for Original / Light / Dark Remotion; follow visual-themes Blossom lock for `sumi-blossom`; follow combo doc for `sumi-dark-faceless`; follow tech-style.md for product guides.
 
 ## Hard uniqueness rules (every topic)
 
@@ -128,4 +133,5 @@ beyondsumi/
 
 `sumi`, `sumi-svg`, `sumi-elevenlabs` — this skill **overrides** generic voice/sound/visual/motion defaults for English shorts.  
 **`faceless-shorts`** — faceless / 2d / **sumi-dark-faceless** combo; repo `faceless-shorts/`, personal `~/.cursor/skills/faceless-shorts/`.  
-Combo lock: [sumi-dark-faceless.md](sumi-dark-faceless.md) · [faceless-route.md](faceless-route.md).
+Combo lock: [sumi-dark-faceless.md](sumi-dark-faceless.md) · [faceless-route.md](faceless-route.md).  
+Tech / Cyber-Sumi guides: [tech-style.md](tech-style.md).

@@ -38,6 +38,7 @@ cp -R ./dark-urdu-skill ~/.cursor/skills/dark-urdu-skill
 3. New agent chat. Call:
 
 - English: `dark_shorts_skill` / `dark_sumi_skill` / `faceless combo`
+- Tech / product guides: **`tech style`** / `cyber-sumi` (see `tech-style.md`)
 - Urdu: `dark_urdu_skill`
 - Either language + faceless engine: `faceless skill` / `2d skill`
 
@@ -49,6 +50,7 @@ dark-shorts-skill/           ← English skill root
   locked-settings.md
   visual-themes.md
   sumi-dark-faceless.md
+  tech-style.md              ← Cyber-Sumi knowledge-guide lock
   faceless-route.md
   themes.json
   english_shorts_voice.json

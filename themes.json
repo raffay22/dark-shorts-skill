@@ -34,6 +34,21 @@
       "seed": "films/urdu-topic-03-absolute-unpredictability/",
       "doc": "sumi-dark-faceless.md",
       "note": "Faceless capture + Sumi Dark ink void; not Remotion GSAP"
+    },
+    "tech-style": {
+      "charcoal": "#12141A",
+      "ink": "#0B0C10",
+      "gold": "#C9A227",
+      "cyan": "#3BC7D9",
+      "paper": "#F2F0EA",
+      "engine": "python-cyber-sumi",
+      "aesthetic": "cyber-sumi",
+      "aliases": ["tech style", "cyber-sumi", "cyber sumi", "TechSpec", "knowledge guide"],
+      "seed": "films/techspec-01-laptop-college-major/",
+      "doc": "tech-style.md",
+      "image_rule": "one-hero-per-beat",
+      "text_styles": ["typewriter", "word-reveal", "wipe"],
+      "note": "Product/spec knowledge guides; sequential B-roll; kinetic titles; no multi-image grids"
     }
   },
   "motion": {
@@ -41,7 +56,8 @@
     "advanced_motion_graphics": true,
     "applies_to_styles": ["sumi-original", "sumi-light", "sumi-dark", "sumi-blossom"],
     "remotion_pattern": "paused_timeline_seek_frame_over_fps",
-    "faceless_combo_styles": ["sumi-dark-faceless"]
+    "faceless_combo_styles": ["sumi-dark-faceless"],
+    "tech_styles": ["tech-style"]
   },
   "categories": {
     "A_silence_isolation": {
